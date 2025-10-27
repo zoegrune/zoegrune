@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Zoe Greene">
+    <title>About Me - Zoe Greene</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #4a4a4a;
+        }
+
+        header {
+            background: linear-gradient(135deg, #b06ab3 0%, #c2185b 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 0.5rem;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        nav a {
+            color: #9b59b6;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #b06ab3;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .content-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .content-section h2 {
+            color: #b06ab3;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #b06ab3;
+            padding-bottom: 0.5rem;
+        }
+
+        .content-section p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .content-section a {
+            color: #9b59b6;
+            text-decoration: none;
+        }
+
+        .content-section a:hover {
+            text-decoration: underline;
+        }
+
+        .welcome-message {
+            font-size: 1.3rem;
+            color: #666;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: #f5f5f5;
+            border-radius: 5px;
+        }
+
+        .profile-section {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+        }
+
+        .profile-photo {
+            flex-shrink: 0;
+        }
+
+        .profile-photo img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .profile-text {
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-photo img {
+                width: 200px;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #ccc;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .content-section {
+                padding: 2rem 1.5rem;
+            }
+
+            .content-section p {
+                font-size: 1rem;
+            }
+
+            .profile-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-photo img {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zoe Greene, PhD</h1>
+        <p>University of Strathclyde, Glasgow</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="datasets.html">Datasets</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="phd-students.html">PhD Students</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="welcome-message">
+            Welcome! I am a Reader at the University of Strathclyde in Glasgow, Scotland. Here you can learn more about my research, teaching and ongoing projects.
+        </div>
+
+        <section class="content-section">
+            <h2>About Me</h2>
+
+            <div class="profile-section">
+                <div class="profile-photo">
+                    <img src="profile-photo.jpg" alt="Zoe Greene">
+                </div>
+                <div class="profile-text">
+                    <p>I am a Reader (Associate Professor) at the <a href="https://www.strath.ac.uk/humanities/governmentpublicpolicy/" target="_blank">Department of Government and Public Policy</a> at the University of Strathclyde (Glasgow, Scotland). I moved to Glasgow in summer 2015 after serving as a Post-Doctoral Researcher at the <a href="http://reforms.uni-mannheim.de/projects/project_group_c/project_c2/" target="_blank">SFB 884 Collaborative Research Center on the "Political Economy of Reforms"</a> at the University of Mannheim (Mannheim, Germany). I completed my Ph.D. at the University of Iowa where I studied comparative politics, political institutions and quantitative methods.</p>
+
+                    <p>My research and teaching interests include comparative politics, intra-party politics, parties and elections, legislative behavior, public policy, and European Politics using interdisciplinary computational social science approaches. My research links the disagreements and dynamics that occur with political parties to their election strategies, government formation and the policy-making process.</p>
+                </div>
+            </div>
+
+            <p>As Co-PI of the Norface network funded EUINACTION project with Nikoleta Yordanova and Goran Glavas, we examined the impact of domestic national politics and preferences on the policy-making competencies of the European Union institutions leading to the publication of the <a href="https://dataverse.harvard.edu/dataverse/ParlEE" target="_blank">ParlEE dataset</a> including a substantial text dataset of actors issue priorities from 28 parliaments.</p>
+
+            <p>Information and links to my recent publications, <a href="datasets.html">datasets</a>, working papers or my broader research agenda check out my <a href="publications.html">Publications page</a> or follow me on BlueSky <a href="https://bsky.app/profile/zdgreene.bsky.social" target="_blank">@zdgreene.bsky.social</a>.</p>
+
+            <p>For my full curriculum vitae, please see my <a href="CV.pdf" target="_blank">CV (PDF)</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Zoe Greene. All rights reserved.</p>
+    </footer>
+</body>
+</html>
