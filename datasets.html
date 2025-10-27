@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zoe Greene's Research Datasets">
+    <title>Datasets - Zoe Greene</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #4a4a4a;
+        }
+
+        header {
+            background: linear-gradient(135deg, #b06ab3 0%, #c2185b 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        nav a {
+            color: #9b59b6;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #b06ab3;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .content-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .content-section h2 {
+            color: #b06ab3;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #b06ab3;
+            padding-bottom: 0.5rem;
+        }
+
+        .dataset {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .dataset:last-child {
+            border-bottom: none;
+        }
+
+        .dataset h3 {
+            color: #9b59b6;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .dataset a {
+            color: #c2185b;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .dataset a:hover {
+            text-decoration: underline;
+            color: #b06ab3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #ccc;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .content-section {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zoe Greene, PhD</h1>
+        <p>University of Strathclyde, Glasgow</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="datasets.html">Datasets</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="phd-students.html">PhD Students</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="content-section">
+            <h2>Datasets</h2>
+
+            <div class="dataset">
+                <h3>ParlEE</h3>
+                <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ZY3RV7" target="_blank">ParlEE plenary speeches data set: Annotated full-text sentence-level plenary speeches of 27 EU states and the EP</a>
+            </div>
+
+            <div class="dataset">
+                <h3>Party Congress Speeches</h3>
+                <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/7J67DS" target="_blank">French (1977-2018) and German (1990-2015) Party Congress Speeches</a>
+            </div>
+
+            <div class="dataset">
+                <h3>Scottish Election Manifestos</h3>
+                <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PH8XZO#" target="_blank">Scottish Election Manifestos, 1999-2016 (updated 02/2020)</a>
+            </div>
+
+            <div class="dataset">
+                <h3>US State Legislative Professionalism</h3>
+                <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/27595" target="_blank">US state Legislative Professionalism Component scores, 1977-2014 (updated 05/2018)</a>
+            </div>
+
+            <div class="dataset">
+                <h3>Effective Number of Manifesto Issues</h3>
+                <a href="https://doi.org/10.7910/DVN/TCVIXB" target="_blank">Effective Number of Manifesto Issues</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Zoe Greene. All rights reserved.</p>
+    </footer>
+</body>
+</html>
